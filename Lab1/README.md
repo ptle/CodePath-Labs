@@ -12,7 +12,7 @@ Practice of tableviews and api calls.
 
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of the lab:
 
 <img src='http://i.imgur.com/TT5mKCx.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
