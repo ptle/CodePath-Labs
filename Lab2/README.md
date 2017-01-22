@@ -1,20 +1,20 @@
-# Lab1 - *Tumblr*
+# Lab2 - *Tumblr*
 
 **Tumblr** is a tableview of Images for iOS.
 
 Submitted by: **Peter Le**
 
-Time spent: **1** hours spent in total
+Time spent: **2** hours spent in total
 
 ## Description
-Practice of tableviews and api calls.
+Built off of last week's tumblr application. Added refresh, infinite scroll, and segued into a photo view.
 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/TT5mKCx.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/UnuIggb.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
