@@ -14,7 +14,7 @@ Practice of tableviews and api calls.
 
 Here's a walkthrough of the lab:
 
-<img src='http://i.imgur.com/TT5mKCx.gif title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/TT5mKCx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
