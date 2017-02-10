@@ -94,7 +94,7 @@ class PhotosViewController: UIViewController,UITableViewDataSource, UITableViewD
     func refreshControlAction(refreshControl: UIRefreshControl) {
         
         // ... Create the URLRequest `myRequest` ...
-        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&offset=\(offset)")
+        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV")
         let request = NSURLRequest(url: url! as URL)
         
         // Configure session so that completion handler is executed on main UI thread
