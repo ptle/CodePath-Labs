@@ -1,4 +1,4 @@
-# Lab2 - *ParseChar*
+# Lab2 - *ParseChat*
 
 **ParseChat** is a applciation that uses Parse to creat/login users and have them send messages.
 
