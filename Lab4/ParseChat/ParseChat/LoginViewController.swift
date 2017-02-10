@@ -30,8 +30,6 @@ class LoginViewController: UIViewController {
     @IBAction func login(_ sender: Any) {
         let emailtext = email.text!
         let passwordtext = password.text!
-        print(emailtext)
-        print(passwordtext)
         if emailtext == "" || passwordtext == ""
         {
             let alertController = UIAlertController(title: "Error", message: "Make sure email and password are filled out", preferredStyle: .alert)
@@ -52,6 +50,7 @@ class LoginViewController: UIViewController {
             PFUser.logInWithUsername(inBackground: emailtext, password: passwordtext) { (user: PFUser?, error: Error?) in
                 if user != nil {
                     print("Success! You are now logged in! 👍")
+                    self.performSegue(withIdentifier: "login", sender: nil)
                 } else {
                     print(error?.localizedDescription ?? "unknown error occured! 😬")
                     
@@ -117,6 +116,7 @@ class LoginViewController: UIViewController {
                     
                 } else {
                     // Hooray! Let them use the app now.
+                    self.performSegue(withIdentifier: "login", sender: nil)
                 }
             }
         }

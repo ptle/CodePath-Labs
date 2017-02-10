@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		43EED92F1E4A84B5002D11B9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EED92E1E4A84B5002D11B9 /* ChatViewController.swift */; };
+		43EED9351E4AB419002D11B9 /* messageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43EED9341E4AB419002D11B9 /* messageTableViewCell.swift */; };
 		98E8B0B3148DEA680F8CE6E3 /* Pods_ParseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE71E8B27BEABB417FBF9305 /* Pods_ParseChat.framework */; };
 		D097FEA91E41783A0018D8F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D097FEA81E41783A0018D8F7 /* AppDelegate.swift */; };
 		D097FEAE1E41783A0018D8F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D097FEAC1E41783A0018D8F7 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		43EED92E1E4A84B5002D11B9 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		43EED9341E4AB419002D11B9 /* messageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageTableViewCell.swift; sourceTree = "<group>"; };
 		51F11FC13358C2A902984D73 /* Pods-ParseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.release.xcconfig"; sourceTree = "<group>"; };
 		83F61E78E392B8EC6B4065AC /* Pods-ParseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.debug.xcconfig"; sourceTree = "<group>"; };
 		D097FEA51E41783A0018D8F7 /* ParseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +50,14 @@
 				EE71E8B27BEABB417FBF9305 /* Pods_ParseChat.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43EED9311E4AB3C9002D11B9 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				43EED9341E4AB419002D11B9 /* messageTableViewCell.swift */,
+			);
+			name = Class;
 			sourceTree = "<group>";
 		};
 		B83090C2C085CFE2B7529D52 /* Pods */ = {
@@ -79,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D097FEBA1E4179760018D8F7 /* ViewControllers */,
+				43EED9311E4AB3C9002D11B9 /* Class */,
 				D097FEA81E41783A0018D8F7 /* AppDelegate.swift */,
 				D097FEAC1E41783A0018D8F7 /* Main.storyboard */,
 				D097FEAF1E41783A0018D8F7 /* Assets.xcassets */,
@@ -92,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				D097FEBB1E417C020018D8F7 /* LoginViewController.swift */,
+				43EED92E1E4A84B5002D11B9 /* ChatViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -220,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D097FEBC1E417C020018D8F7 /* LoginViewController.swift in Sources */,
+				43EED9351E4AB419002D11B9 /* messageTableViewCell.swift in Sources */,
+				43EED92F1E4A84B5002D11B9 /* ChatViewController.swift in Sources */,
 				D097FEA91E41783A0018D8F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
