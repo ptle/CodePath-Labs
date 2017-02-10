@@ -13,15 +13,15 @@ class PhotosViewController: UIViewController,UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var table: UITableView!
     var posts: [NSDictionary] = []
-    var total = 5
+    var offset = 0
     
     var isMoreDataLoading = false
     var loadingMoreView:InfiniteScrollActivityView?
     
     func loadMoreData() {
-        total += 5
+        offset += 20
         // ... Create the URLRequest `myRequest` ...
-        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&limit=\(total)")
+        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&offset=\(offset)")
         let request = NSURLRequest(url: url! as URL)
         
         // Configure session so that completion handler is executed on main UI thread
@@ -52,7 +52,7 @@ class PhotosViewController: UIViewController,UITableViewDataSource, UITableViewD
                         let responseFieldDictionary = responseDictionary["response"] as! NSDictionary
                         
                         // This is where you will store the returned array of posts in your posts property
-                        self.posts = responseFieldDictionary["posts"] as! [NSDictionary]
+                        self.posts.append(contentsOf: responseFieldDictionary["posts"] as! [NSDictionary])
                         self.table.reloadData()
                     }
                 }
@@ -94,7 +94,7 @@ class PhotosViewController: UIViewController,UITableViewDataSource, UITableViewD
     func refreshControlAction(refreshControl: UIRefreshControl) {
         
         // ... Create the URLRequest `myRequest` ...
-        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&limit=\(total)")
+        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&offset=\(offset)")
         let request = NSURLRequest(url: url! as URL)
         
         // Configure session so that completion handler is executed on main UI thread
@@ -144,7 +144,7 @@ class PhotosViewController: UIViewController,UITableViewDataSource, UITableViewD
         insets.bottom += InfiniteScrollActivityView.defaultHeight;
         table.contentInset = insets
         
-        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&limit=\(total)")
+        let url = NSURL(string:"https://api.tumblr.com/v2/blog/humansofnewyork.tumblr.com/posts/photo?api_key=Q6vHoaVm5L1u2ZAW1fqv3Jw48gFzYVg9P0vH0VHl3GVy6quoGV&offset=\(offset)")
         let request = NSURLRequest(url: url! as URL)
         let session = URLSession(
             configuration: URLSessionConfiguration.default,
