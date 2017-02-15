@@ -23,8 +23,8 @@ class RepoResultsViewController: UIViewController, UITableViewDelegate, UITableV
         
         //Setup table
         tableView.dataSource = self
-        //tableView.estimatedRowHeight = 300
-        //tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 300
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         tableView.delegate = self
         
