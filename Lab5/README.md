@@ -1,4 +1,4 @@
-# Lab3 - *Github Repo*
+# Lab5 - *Github Repo*
 
 **Github Repo** is a tableview of popular github repositories
 
@@ -20,7 +20,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-I ran into some issues with auto layout, especially when in came to resizing
+I accidentally flipped the save and cancel.
 
 ## License
 
