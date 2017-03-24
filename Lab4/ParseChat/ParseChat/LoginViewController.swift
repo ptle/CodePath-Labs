@@ -32,7 +32,7 @@ class LoginViewController: UIViewController {
         let passwordtext = password.text!
         if emailtext == "" || passwordtext == ""
         {
-            let alertController = UIAlertController(title: "Error", message: "Make sure email and password are filled out", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Error", message: "Make sure username and password are filled out", preferredStyle: .alert)
             
             // create an OK action
             let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
