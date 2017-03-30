@@ -1,4 +1,4 @@
-# Lab7 - *ParseChat*
+# Lab7 - *Photo Map*
 
 **Photo map** is a applciation that uses mapkit framework
 
