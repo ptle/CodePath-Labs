@@ -1,4 +1,4 @@
-# Lab7 - *Tinder*
+# Lab8 - *Tinder*
 
 **Tinder** is a applciation that replciates tinders animations and modal segue
 
