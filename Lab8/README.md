@@ -1,26 +1,26 @@
-# Lab7 - *Photo Map*
+# Lab7 - *Tinder*
 
-**Photo map** is a applciation that uses mapkit framework
+**Tinder** is a applciation that replciates tinders animations and modal segue
 
 Submitted by: **Peter Le**
 
 Time spent: **2** hours spent in total
 
 ## Description
-Users can drop pins with photos and annotations.
+Users can swipe photos and see profile view
 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/1Xj5urp.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/AUafDAa.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-I ran into a problem with linking the dirrent views
+The animations were somewhat hard to get working properly
 
 ## License
 
